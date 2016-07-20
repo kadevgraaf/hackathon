@@ -258,5 +258,19 @@ export default {
             //context.executeAction(loadPresentation, payload, done);
             context.executeAction(loadDeck, payload, done);
         }
+    },
+    hackathon: {
+        path: '/hackathon',
+        method: 'get',
+        page: 'hackathon',
+        
+        handler: require('../components/Hackathon/Hackathon'),
+        action: (context, payload, done) => {
+            context.dispatch('UPDATE_PAGE_TITLE', {
+                pageTitle: fullTitle + '--> Hackathon'
+            });
+            done();
+        }
+
     }
 };

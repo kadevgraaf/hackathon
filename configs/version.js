@@ -1,5 +1,5 @@
 
 export default {
-    branch: 'master',
-    head: '91b3172'
+    branch: 'hackathon',
+    head: '2548804'
 };
